@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rally Trade</title>
+
+    <meta name="description" content="RallyTrade, FRNG limited">
+
+    <meta name="Keywords" content="RallyTrade, FRNG, FRNG Limited">
+
+    <!--Favicon-->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico">
+<link rel="manifest" href="./manifest.json">
+<meta name="msapplication-TileColor" content="#111">
+<meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
+<meta name="theme-color" content="#111">
+
+<!--Google fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <nav class="nav">
+                <img src="./img/logo-rally-trade.svg" alt="Logo" class="logo">
+                
+                <ul class="nav-list" id="nav-list">
+                    <li  class="nav-item"><a class="nav-link" href="#">Home<div class="bar-line"></div></a></li>
+                    <li  class="nav-item"><a class="nav-link" href="#about-us">About Us<div class="bar-line"></div></a></li>
+                    <li  class="nav-item"><a class="nav-link" href="#">Events<div class="bar-line"></div></a></li>
+                    <li  class="nav-item"><a class="nav-link" href="#trading">Trading<div class="bar-line"></div></a></li>
+                    <li  class="nav-item"><a class="nav-link" href="#">Partners</a></li>
+                    <li  class="nav-item"><a class="nav-link" href="#loginForm">Login<div class="bar-line"></div></a></li>
+                    <li  class="nav-item"><a class="nav-link" href="#registerBtn">Register</a></li>
+                    <li  class="nav-item"><a class="nav-link" href="#">+234 901 874 0318</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span> 
+                    <span class="line"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="registration">
+                <div class="form-wrapper">
+                    <div class="formToggle">
+                        <button class="formBtn" id="registerBtn">Registration</button>
+                        <button class="formBtn" id="loginBtn">Login</button>
+                    </div>
+                    <div class="formHolder">
+
+                        <!--Registration form-->
+                        <form action="#" id="registrationForm" class="form">
+                            <div class="form-control">
+                                <label for="">First Name</label>
+                                <input class="formInput" type="text" id="firstName">
+                                <i class="fa fa-check-circle"></i>
+                                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                                <small>error Message</small>
+                            </div>
+
+                            <div class="form-control">
+                                <label for="">Last Name</label>
+                                <input class="formInput" type="text" id="lastName">
+                                <small>error Message</small>
+                            </div>
+
+                            <div class="form-control">
+                                <label for="">Email</label>
+                                <input class="formInput" type="text" id="email">
+                                <small>error message</small>
+                            </div>
+
+                            <div class="form-control">
+                                <label for="">Phone Number</label>
+                                <input class="formInput" type="phone" id="phone">
+                                <small>error message</small>
+                            </div>
+
+                            <div class="form-control">
+                                <label for="">Country</label>
+                                <input class="formInput" type="text" id="country">
+                                <small>error message</small>
+                            </div>
+                            <div class="check">
+                                <input class="checkbox" type="checkbox" name="" id="checkbox">
+                                <p class="description">I hereby state that I am over 18 years old and I have read
+                                    understood,accepted and I agree with the Terms and Conditions(T&C) and other applicable documents
+                                    which are described below. I agree with the personal data processing by RallyTrade as stated in the Privacy Policy.
+                                </p>
+                            </div>
+                            <p class="redirect">Have an account already with us? click <strong>Login</strong>
+                            <div class="radioBtns">
+                                <div class="radioInputs">
+                                    <input class="radio" type="radio" name="account" id="">
+                                    <p class="radio">Demo</p>
+                                    <input type="radio" name="account" id="">
+                                    <p class="radio">Real</p>
+                                </div>
+                                <div class="radioInputs">
+                                    <input class="radio" type="radio" name="account" id="">
+                                    
+                                    <p class="radio">USD</p>
+                                    <input type="radio" name="account" id="">
+                                    <p class="radio">NGN</p>
+                                </div>
+                            </div>
+                            <div class="centerBtn">
+                                <button class="submitBtn" id="signUpSubmitBtn">Open Account</button>
+                            </div>
+                        </form>
+
+                        <!--Login Form-->
+                        <form action="#" id="loginForm" class="form">
+                            <div class="form-control">
+                                <label for="">Email</label>
+                                <input class="formInput" type="text" id="loginEmail">
+                                <small>error message</small>
+                            </div>
+
+                            <div class="form-control">
+                                <label for="">Phone Number</label>
+                                <input class="formInput" type="phone" id="loginPhone">
+                                <small>error message</small>
+                            </div>
+                            <p class="redirect">Don't have an account? click the <strong>Registration button</strong> to open an account
+                                </p>
+                            <div class="centerBtn">
+                                <button class="submitBtn" id="loginSubmitBtn">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-us">
+            <div class="about-us">
+                <div class="image-holder" id="image-container"></div>
+            </div>
+        </section>
+        <section class="tradingSection" id="trading">
+            <div class="trading-wrapper">
+
+                <div class="trade">
+                    <div class="trading-container">
+                        <h1 class="accountHeading">Open your account to start trading today!</h1>
+                        <p class="trading-text">Standard Accounts: $100 + bonus</p>
+                        <p>Competitive spreads, all round offering</p>
+                        <p class="trading-text">Basic Account: $100 + bonus</p>
+                        <p>Same competitive spreads, smaller trade sizes</p>
+                        <p class="trading-text">Pro Account: $500 + bonus</p>
+                        <p>No commissions, no requotes, super tight spreads</p>
+                    </div>
+    
+                    <div class="address-container">
+                        <h4>ADDRESS</h4>
+                        <h4>FRNG Lagos</h4>
+                        <p>Fannis House, 21 Adeniyi Jones Avenue, Ikeja, Lagos State</p>
+                        <p>Phone: +234 901 874 0318</p>
+                        <h4 class="trading-text">FRNG Port Harcourt</h4>
+                        <p>2nd Floor, City View Plaza, No 26a Aba Road, Beside Market Junction, PortHarcourt</p>
+                        <p>Phone: +234 802 822 3337</p>
+                        <h4 class="trading-text">FRNG Ibadan</h4>
+                        <p>2nd Floor, Owoade House, AI Akinyemi Way, Ring Road, Ibadan, Oyo State</p>
+                        <p>Phone: +234 802 722 2322</p>
+                        <h4 class="tradingText">FRNG Abuja</h4>
+                        <p>3rd Floor Lifestyle House, No 3 Mike Akhigbe way, Jabi Abuja</p>
+                        <p>Phone: +234 902 772 2222</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer">
+                    <h1 class="footer-heading">Join over 3 million people who have already chosen RallyTrade</h1>
+                    <p class="trading-text">RallyTrade is an international online broker providing highly competitive brokerage services
+                        to emerging financial economies.
+                    </p>
+                    <p>We infuse cutting edge technology, low transactional fees with an array of financial instruments to give
+                        you an unmatched trading experience.
+                    </p>
+                    <p>We offer trading and other services in Forex, commodities, precious metals, shares, indices and other financial instruments.</p>
+                    <p class="trading-text">Risk Warning: Our products are traded on margin and carry a high level of risk and it is possible to lose all capital.</p>
+                    <p>These products may not be suitable for everyone and you should ensure that you understand the risks involved.</p>
+                    <p class="trading-text">RallyTrade &copy; 2020. Privacy Policy</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="./js/index.js"></script>
+</html>
