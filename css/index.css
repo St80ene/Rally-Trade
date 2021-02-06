@@ -1,0 +1,584 @@
+/*General styles*/
+
+:root {
+	--white: #fff;
+	--brightred: #ff0000b7;
+	--black: #111;
+	--red: red;
+	--green: #2ecc72;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+}
+
+
+/*Styles for Navigation bar*/
+
+.nav-container {
+	width: 100%;
+	background-color: var(--white);
+}
+
+.nav {
+	width: 100%;
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+	padding-top: 0.6rem;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: var(--black);
+	text-transform: uppercase;
+	margin-right: 10px;
+	font-weight: bold;
+	font-size: 13px;
+	transform: scale(0);
+	transition: transform 650ms;
+}
+
+
+.nav-list.active .nav-item {
+	transition-delay: initial;
+	visibility: visible;
+}
+
+
+/*Animating the nav lists*/
+.nav-list.active .nav-item {
+	transition-delay: initial;
+	visibility: visible;
+}
+
+.nav-list.active .nav-item:nth-child(1) {
+	transition-delay: .1s;
+}
+
+.nav-list.active .nav-item:nth-child(2) {
+	transition-delay: .2s;
+}
+
+.nav-list.active .nav-item:nth-child(3) {
+	transition-delay: .3s;
+}
+
+.nav-list.active .nav-item:nth-child(4) {
+	transition-delay: .4s;
+}
+
+.nav-list.active .nav-item:nth-child(5) {
+	transition-delay: .5s;
+}
+
+.nav-list.active .nav-item:nth-child(6) {
+	transition-delay: .6s;
+}
+
+.nav-list.active .nav-item:nth-child(7) {
+	transition-delay: .7s;
+}
+
+.nav-list.active .nav-item:nth-child(8) {
+	transition-delay: .8s;
+}
+
+.hamburger {
+	width: 2rem;
+	height: 1.8rem;
+	position: relative;
+	z-index: 1500;
+	display: none;
+	cursor: pointer;
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: var(--black);
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	transition: all 650ms;
+}
+
+.line:nth-child(1) {
+	top: 0%;
+}
+
+.line:nth-child(2) {
+	top: 34%;
+	margin-top: -1px;
+	width: 25px;
+}
+
+.line:nth-child(3) {
+	top: 73%;
+	margin-top: -2px;
+	width: 18px;
+}
+
+.hamburger.active .line:nth-child(1) {
+	transform: translateY(10px) rotate(45deg);
+	width: 26px;
+}
+
+.hamburger.active .line:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+	transform: translateY(-9px) rotate(-45deg);
+	width: 26px;
+}
+
+.hamburger.active .nav-link {
+	transform: scale(1);
+}
+
+.logo {
+	width: 207px;
+	height: 46px;
+	cursor: pointer;
+	margin-right: 5rem;
+}
+
+.bar-line {
+	background-color: var(--black);
+	width: 2px;
+	height: 11px;
+	margin-left: 7px;
+}
+
+/*Styles for the registration section*/
+
+.registration {
+	background-image: url(../img/ant-rozetsky-HXOllTSwrpM-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+
+.form-wrapper {
+	position: absolute;
+	width: 18rem;
+	top: 18%;
+	left: 7%;
+	z-index: 1;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	box-shadow: 0px 10px 10px -5px;
+}
+
+.formToggle {
+	display: flex;
+	justify-content: space-between;
+	background-color: grey;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+}
+
+.formBtn {
+	padding: 11px;
+	width: 50%;
+	margin: auto;
+	font-weight: bold;
+	outline: none;
+	border: none;
+	border-top-left-radius: 18px;
+	background-color: var(--white);
+	border-top-right-radius: 18px;
+}
+
+#registerBtn {
+	border-top-right-radius: 50px;
+	background-color: transparent;
+}
+
+#loginBtn {
+	border-top-left-radius: 50px;
+}
+
+.formBtn:active {
+	background-color: gray;
+}
+
+.formHolder {
+	background-color: var(--white);
+}
+
+.form {
+	padding: 20px 16px;
+}
+
+.form-control {
+	margin-bottom: 4px;
+	padding-bottom: 17px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+}
+
+.formInput {
+	display: block;
+	border: none;
+	border-bottom: 2px solid black;
+	width: 100%;
+	font-size: 14px;
+	font-family: inherit;
+	padding: 5px;
+	outline: none;
+}
+
+
+.form-control small {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: var(--red);
+	visibility: hidden;
+	font-size: 14px;
+}
+
+.success input {
+	border-color: var(--green);
+}
+
+.error input {
+	border-color: var(--red);
+}
+
+
+.error small {
+	visibility: visible;
+}
+
+.check {
+	display: flex;
+	flex-direction: row;
+	letter-spacing: 1px;
+	margin-top: 12px;
+}
+
+.checkbox {
+	margin-right: 4px;
+}
+
+.radioBtns {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.4rem;
+}
+
+.radioInputs {
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.radio {
+	margin-right: 5px;
+	margin-bottom: 4px;
+}
+
+.redirect {
+	margin-top: 1rem;
+	text-align: center;
+	flex-wrap: wrap;
+	letter-spacing: 1px;
+}
+
+.centerBtn {
+	width: 100%;
+	text-align: center;
+}
+
+.submitBtn {
+	margin: 2rem auto;
+	color: var(--white);
+	font-weight: bold;
+	padding: 10px;
+	width: 40%;
+	background-color: var(--green);
+	border: 1px solid var(--white);
+	border-radius: 14px;
+	outline: none;
+}
+
+.submitBtn:hover,
+.submitBtn:active {
+	background-color: var(--white);
+	color: var(--green);
+	border: 1px solid var(--green);
+}
+
+#registrationForm {
+	display: none;
+}
+
+/*Styles for about page*/
+.about-us {
+	width: 100%;
+	background-color: #eee;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.image-holder {
+	width: 100%;
+	max-width: 1040px;
+	display: flex;
+
+	justify-content: space-between;
+}
+
+.image-set {
+	width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-images {
+	width: auto;
+	height: 47px;
+	margin-bottom: 5px;
+}
+
+.about-text {
+	color: var(--black);
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.image-wrapper {
+	margin: 13px auto 37px;
+}
+
+/*Styles for Trading and address section*/
+.trading-text {
+	margin-top: 1rem;
+}
+
+.trading-wrapper {
+	width: 100%;
+	font-weight: bold;
+	background-color: rgba(128, 128, 128, 0.445);
+	height: fit-content;
+}
+
+.trade {
+	width: 100%;
+	max-width: 1527px;
+	display: flex;
+	margin: auto;
+	padding: 10px;
+	height: 287px;
+}
+
+.trading-container {
+	align-self: flex-start;
+	font-style: oblique;
+	text-align: left;
+	height: 100%;
+	font-size: 12px;
+}
+
+.address-container {
+	align-self: flex-end;
+	height: 100%;
+	font-size: 12px;
+}
+
+.address-container p {
+	font-size: 11px;
+	line-height: 18px;
+}
+
+.address-container h4 {
+	font-size: 12px;
+}
+
+/*Footer styles*/
+
+.footer-container {
+	text-align: center;
+	font-style: oblique;
+	font-weight: bold;
+	width: 100%;
+}
+
+.footer {
+	max-width: 1291px;
+	margin: 1rem auto;
+}
+
+.footer-heading {
+	color: var(--red);
+	font-size: 26px;
+}
+
+/*Media queries for small screens*/
+@media (max-width: 600px) {
+
+	.form-control label, .form-control p {
+		font-size: 13px;
+	}
+
+	.form-wrapper {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.image-wrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 13px auto;
+	}
+
+	.bar-line {
+		display: none;
+	}
+
+	.image-holder{
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+
+	.footer-container	 {
+		font-size: 13px;
+	}
+
+	.address-container {
+		margin-top: 2rem;
+	}
+
+	.trading-container p {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 786px) {
+	.hamburger {
+		display: block;
+	}
+	.nav-list {
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgb(128, 128, 128);
+		position: absolute;
+		top: 0;
+		left: -100%;
+		transition: left 650ms;
+		z-index: 1500;
+	}
+
+	.nav-item{
+		padding-top: 1rem;
+		margin: auto;
+		transition-delay: .8s;
+		visibility: hidden;
+		width: 100%;
+	}
+
+	.nav-link {
+		font-size: 17px;
+		padding: 2rem;
+		margin: auto;
+		color: var(--white);
+	}
+
+	.nav-link:hover {
+		color: rgba(0, 0, 0, 0.733);
+		transition: all 0.7s ease-in-out;
+	}
+
+	.nav-list.active {
+		left: 0px;
+	}
+
+	.bar-line {
+		display: none;
+	}
+
+	.trade {
+		flex-direction: column;
+		justify-content: space-around;
+		height: fit-content;
+	}
+
+	.footer h1 {
+		font-size: 18px;
+	}
+
+	.footer p {
+		font-size: 14px;
+	}
+}
+
+/*Media queries for large screens*/
+@media (min-width: 600px) {
+
+	.form-wrapper {
+		width: 500px;
+	}
+
+	.form-control {
+		margin-bottom: 10px;
+		padding-bottom: 20px;
+	}
+
+	.accountHeading {
+		font-size: 25px;
+	}
+}
+
+@media (min-width: 769px) {
+	.bar-line {
+		display: inline-block;
+	}
+
+	.address-container {
+		text-align: right;
+		margin-top: 0px;
+		width: 50%;
+	}
+
+	.trading-wrapper {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.trading-container {
+		width: 50%;
+		border-right: 1px solid var(--black);
+	}
+	
+	.trading-container h4 {
+		padding-top: 1rem;
+	}
+}
